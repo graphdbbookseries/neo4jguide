@@ -1,0 +1,4 @@
+[1] P136
+3.3.8.5 用MERGE的唯一性约束小节中，有段原文如下：
+"ERGE (laurence:Person) {name: 'Laurence Fishburne'}"
+应改为："MERGE (laurence:Person) {name: 'Laurence Fishburne'}"，其中的"ERGE"前面缺失字母"M"。

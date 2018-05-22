@@ -15,3 +15,8 @@ ERGE (laurence:Person) {name: 'Laurence Fishburne'}<br>
 原文：R RETURN toInt('42'), toInt('not a number')<br>
 更正：RETURN toInt('42'), toInt('not a number')<br>
 说明：去掉了RETURN之前多余的'R'字符<br>
+
+#### 3.5.2.2 节点属性存在性约束 P205
+原文：CREATE CONSTRAINT ON (book:Book) ASSERT book.isbn IS UNIQUE<br>
+更正：CREATE CONSTRAINT ON (book:Book) ASSERT exists(book.isbn)<br>
+说明：将"book.isbn IS UNIQUE"改为"exists(book.isbn)"<br>

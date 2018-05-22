@@ -1,25 +1,15 @@
 # 第四章 Neo4j 程序开发
-#### 4 前述 P248<br>
+#### 4 前述 P246<br>
 原文：<br>
 本章所有实例代码都可以从Neo4j的GitHub主页找到：https://github.com/neo4j-examples，建议读者结合实例代码学习以达到事半功倍的效果。
+<br>
+
 更正：<br>
-本章所有实例代码都可以从Neo4j的GitHub主页找到：https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples和https://github.com/neo4j-examples，建议读者结合实例代码学习以达到事半功倍的效果。
+本章所有实例代码都可以从Neo4j的GitHub主页找到：[https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples](https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples)和[https://github.com/neo4j-examples](https://github.com/neo4j-examples)，建议读者结合实例代码学习以达到事半功倍的效果。
 
 <br/>
 说明：<br/>
 添加网址https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples
-
-#### 4.2 Java API嵌入式开发模式 P248<br>
-原文：<br>
-由于Neo4j是一款基于JVM的产品，可以直接在Java应用程序中使用Neo4j的Java API来进行编程开发，而Java API在应用程序和Neo4j的物理数据存储之间成为一种传送数据的机制。这样应用程序就可以使用Neo4j数据库的大部分功能，并能直接管理Neo4j数据库，例如所有Neo4j的操作逻辑、遍历、查询等操作都可以通过Java程序实现。从应用程序的角度看这是非常有用的。现在，我们只要知道通过Java API嵌入式开发模式，Java应用程序和Neo4j将运行在同一个JVM上就足以满足需要了。<br>
-除了可以使用面向图数据库的API来操作节点、关系和路径对象，它还提供可定制的高速遍历和图算法。
-更正：<br>
-由于Neo4j是一款基于JVM的产品，可以直接在Java应用程序中使用Neo4j的Java API来进行编程开发，而Java API在应用程序和Neo4j的物理数据存储之间成为一种传送数据的机制。这样应用程序就可以使用Neo4j数据库的大部分功能，并能直接管理Neo4j数据库，例如所有Neo4j的操作逻辑、遍历、查询等操作都可以通过Java程序实现。从应用程序的角度看这是非常有用的。现在，我们只要知道通过Java API嵌入式开发模式，Java应用程序和Neo4j将运行在同一个JVM上就足以满足需要了。<br>
-本节所有代码都可以从GitHub下载，地址为：https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples<br>
-除了可以使用面向图数据库的API来操作节点、关系和路径对象，它还提供可定制的高速遍历和图算法。
-
-说明：<br>
-添加一段新内容：本节所有代码都可以从GitHub下载，地址为：https://github.com/neo4j/neo4j-documentation/tree/3.1/embedded-examples<br>
 
 #### 4.2.2.2 将操作写进事务中 P249<br>
 原文：程序4-7事务try、catch块<br>
@@ -284,17 +274,3 @@ Transaction tx = graphDb.beginTx();<br>
 </div>
 说明：<br/>
 true/false 替换为 true或false，三个空单元用 /填充
-
-#### 4.3	各语言驱动包开发模式 P288<br>
-原文：<br>
-Neo4j驱动程序为其它开发语言提供了访问Neo4j的途径。编写使用驱动程序的应用程序实例就可以与数据库进行基于事务的会话。在会话中，事务可以运行创建和查询数据的相关命令，也可以定义数据库模式以及监视和管理数据库。当Neo4j部署在因果（Causal Clustering）集群中时，驱动程序可以处理读取和写入操作的路由。使用因果集群驱动程序还提供书签，书签用于确保因果一致性，也就是说应用程序可以在集群的不同成员上运行多个查询，同时保持数据的一致。<br>
-Neo4j驱动程序使用Bolt协议进行通信。因果集群提供了使用驱动程序获取集群拓扑的功能。驱动程序必须具有集群感知能力才能提供路由和负载平衡。<br>
-
-<br/>
-更正：<br/>
-Neo4j驱动程序为其它开发语言提供了访问Neo4j的途径。编写使用驱动程序的应用程序实例就可以与数据库进行基于事务的会话。在会话中，事务可以运行创建和查询数据的相关命令，也可以定义数据库模式以及监视和管理数据库。当Neo4j部署在因果（Causal Clustering）集群中时，驱动程序可以处理读取和写入操作的路由。使用因果集群驱动程序还提供书签，书签用于确保因果一致性，也就是说应用程序可以在集群的不同成员上运行多个查询，同时保持数据的一致。<br>
-本节中的代码可以从GitHub下载，地址为：https://github.com/neo4j-examples。<br>
-Neo4j驱动程序使用Bolt协议进行通信。因果集群提供了使用驱动程序获取集群拓扑的功能。驱动程序必须具有集群感知能力才能提供路由和负载平衡。<br>
-
-说明：<br/>
-添加新段落：本节中的代码可以从GitHub下载，地址为：https://github.com/neo4j-examples。<br>

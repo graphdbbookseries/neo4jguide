@@ -153,7 +153,7 @@
 <p class="a">8位的整数</p>
 </td>
 <td>
-<p class="a">-128到127, inclusive</p>
+<p class="a">-128到127</p>
 </td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@
 <p class="a">16位的整数</p>
 </td>
 <td>
-<p class="a">-32768到32767, inclusive</p>
+<p class="a">-32768到32767</p>
 </td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@
 <p class="a">32位的整数</p>
 </td>
 <td>
-<p class="a">-2147483648到2147483647, inclusive</p>
+<p class="a">-2147483648到2147483647</p>
 </td>
 </tr>
 <tr>
@@ -186,7 +186,7 @@
 <p class="a">64位的整数</p>
 </td>
 <td>
-<p class="a">-9223372036854775808到 9223372036854775807, inclusive</p>
+<p class="a">-9223372036854775808到 9223372036854775807</p>
 </td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@
 <p class="a">16位无符号整数代表的字符</p>
 </td>
 <td>
-<p class="a">u0000 到 uffff (0 to 65535)</p>
+<p class="a">u0000 到 uffff (0 到 65535)</p>
 </td>
 </tr>
 <tr>
